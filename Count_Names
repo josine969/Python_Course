@@ -1,0 +1,35 @@
+
+#Write a function that takes a string and returns the number of four letters names.The input argument names is a string with names separated by spaces without punctuation
+
+# Online Python compiler (interpreter) to run Python online.
+# Write Python 3 code in this online editor and run it.
+names = "Jose Virgina Link Luna Zoe"
+
+
+def fourletters(names):
+    #print (names.split())
+    
+    texto = names.split()
+    
+    superados=0
+    
+    for c in texto:
+        #print (c)
+        total = len(c)
+        #print (total)
+        
+        if total == 4:
+            #print (c, "Tiene 4 caracteres")
+            superados=superados+1
+        else:
+            #print (c, "No tiene 4")
+            superados=superados
+            
+    #print ("Total de nombres con cuatro", superados)
+    
+    return superados
+    
+#fourletters(names)
+    
+    
+print(fourletters(names))

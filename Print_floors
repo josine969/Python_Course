@@ -1,0 +1,13 @@
+def tower_builder(n):
+    result = []
+    num = (n * 2) - 1
+    for x in range(1, 2 * n, 2):
+        print(x)
+        stars = x * '*'
+        line = stars.center(num)
+        print(line)
+        result.append(line)
+    return result
+    
+
+print(tower_builder(3))

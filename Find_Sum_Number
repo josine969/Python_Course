@@ -1,0 +1,39 @@
+#Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target. You may assume that each input would have exactly one solution, and you may not use the same element twice. Return the answer in ascending order.
+# Implement function get_result
+#
+nums = [3,2,3]
+target =6
+
+def get_result(nums, target):
+    num2 = []
+    rompo = 0
+    position1 = 0
+    position2 = 0
+    final = []
+
+    for x in nums:
+        num2.append(x)
+
+    #print (num2)
+
+    for x in nums:
+        if rompo == 0:
+            for z in num2:
+                resultado=x+z
+                #print (resultado)
+                if resultado == target:
+                    rompo=1
+                    position1 = nums.index(x)
+                    position2 = num2.index(z)
+                    break
+    
+    #print (position1)
+    #print (position2)
+    
+    final.append(position1)
+    final.append(position2)
+    #print(final)
+    
+    return (final)
+
+get_result(nums, target)

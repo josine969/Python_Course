@@ -1,0 +1,22 @@
+# Online Python compiler (interpreter) to run Python online.
+# Write Python 3 code in this online editor and run it.
+numbers = [4, 2, 1, 5]
+
+def get_sums(numbers):
+    suma=0
+    resultado=[]
+    while len(numbers) >0:
+        for x in numbers:
+            print(x)
+            suma=suma+x
+    
+        print(suma)
+        resultado.append(suma)
+        numbers.pop(0)
+        suma=0
+    
+    resultado.append(0)
+
+    return resultado
+
+print(get_sums(numbers))

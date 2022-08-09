@@ -1,0 +1,37 @@
+# Online Python compiler (interpreter) to run Python online.
+# Write Python 3 code in this online editor and run it.
+
+numbers = [80, 20, 4, 40, 76, 78, 2, 3, 70, 60]
+
+def find_outlier(numbers):
+    contpar=0
+    valorpar=0
+    contimp=0
+    valorimp=0
+    resultado=0
+
+    if len(numbers) < 3:
+        print("muy pequeño, para casa")
+    else:
+        for x in numbers:
+            print(x)
+            if x % 2 == 0:
+                print("El numero es PAR")
+                contpar+=1
+                valorpar=x
+            else:
+                print("El numero es IMPAR")
+                contimp+=1
+                valorimp=x
+    print(contpar)
+    print(contimp)
+    if contpar>contimp:
+        print("Era un array de pares")
+        resultado=valorimp
+    else:
+        print("Era un array de impares")
+        resultado=valorpar
+    
+    return resultado
+
+print(find_outlier(numbers))

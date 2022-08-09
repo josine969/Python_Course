@@ -1,0 +1,35 @@
+# Online Python compiler (interpreter) to run Python online.
+# Write Python 3 code in this online editor and run it.
+food = [10, 2, 7, 7, 2]
+
+def get_result(food):
+    eat = []
+    if len(food)> 0:
+        for x in food:
+            #print(x)
+            if x in eat:
+                #print (x, "Existe, obviamos")
+                nominal = 0
+            else:
+                #print (x, "No existe, añadimos")
+                eat.append(x)
+                
+    #print (eat)
+
+        resultado=0
+
+        for z in eat:
+            resultado = resultado + z
+
+        #print (resultado)
+    else:
+        resultado=0
+
+    return resultado
+        
+
+
+    
+
+
+print(get_result(food))
